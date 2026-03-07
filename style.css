@@ -1,25 +1,53 @@
-.container{
-   width: 1000px;
-   margin: auto;
+.container {
+  width: 1000px;
+  margin: auto;
 }
 
-.logo img{
-    width: 250px;
-    height: 200px;
+.logo img {
+  width: 250px;
+  height: 200px;
 }
 
-.menu{
-    margin-top: 145px;
+.menu {
+  margin-top: 145px;
 }
 
-.menu a{
-    display: inline-block;
-    width: 150px;
-    height: 50px;
-    margin-bottom: 5px;
-    line-height: 50px;
-    text-align: center;
-    text-decoration: none;
-    color:black;
-    border:1px solid black #ccc;
+.menu a {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  margin-bottom: 5px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: red;
+  border: 1px solid purple;
+}
+/*banne kısmı*/
+
+.image-banner {
+  width: 1000px;
+  height: 460px;
+  border: 5px solid #D2AF8E; /*kahve rengi yapılabilir*/
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px; /*alt boşluk için*/
+}
+
+.image-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*overlay efekti için::after kullanarak bir katman ekledim*/
+image-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 800%;
+  background-color: #D2AF8E; /*telegram rengi*/
+ 
 }
