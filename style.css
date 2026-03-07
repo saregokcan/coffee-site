@@ -6,14 +6,20 @@ body {
     color: #fff;                /* sayfa genel yazı rengi, koyu arka plana kontrast için */
 }
 
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
 .container {
   width: 1000px;
   margin: auto;
 }
 
 .logo img {
-  width: 250px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
+  margin-top: 30px;
 }
 
 .menu {
