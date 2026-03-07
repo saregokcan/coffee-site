@@ -139,7 +139,7 @@ image-banner::after {
 
 /*footer*/
 footer {
-    background-color: #1f0d04; /* footer koyu ton */
+    background-color: #1f0d04;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -151,8 +151,8 @@ footer {
     width: 1000px;
     height: 235px;
     display: flex;
-    justify-content: space-between; /* üç sütun arası eşit boşluk */
-    align-items: flex-start;        /* başlıklar üstten hizalı */
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 .footer-column {
@@ -185,23 +185,26 @@ footer {
 .footer-column ul li a:hover {
     text-decoration: underline;
 }
+
+/* Sosyal medya ikonları */
 .social-icons {
     display: flex;
-    flex-direction: column; /* öğeleri alt alta diz */
-    gap: 10px;              /* ikonlar arası boşluk */
+    flex-direction: column; /* ikonları alt alta diz */
+    gap: 10px;
     margin-top: 10px;
 }
 
 .social-item {
     display: flex;
-    flex-direction: column; /* ikon ve yazı dikey */
-    align-items: center;    /* ortalar */
+    align-items: center;
+    width: 75px; /* ikon ve yazı genişliği */
+    gap: 12px;
 }
 
 .social-item img {
-    width: 30px;
+    width: 30px;   /* ikon boyutu */
     height: 30px;
-    margin-bottom: 5px;     /* ikon ile yazı arası boşluk */
+    margin-bottom: 5px; /* ikon ile yazı arası boşluk */
 }
 
 .social-item span {
