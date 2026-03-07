@@ -28,7 +28,7 @@
 .image-banner {
   width: 1000px;
   height: 460px;
-  border: 5px solid #D2AF8E; /*kahve rengi yapılabilir*/
+  border: 5px solid #d2af8e; /*kahve rengi yapılabilir*/
   position: relative;
   overflow: hidden;
   margin-bottom: 40px; /*alt boşluk için*/
@@ -48,28 +48,83 @@ image-banner::after {
   left: 0;
   width: 100%;
   height: 50%;
-  background-color: #D2AF8E; /*telegram rengi*/
- 
+  background-color: #d2af8e; /*telegram rengi*/
 }
 
 /* i4 kısmı */
 .i4-section {
-    display: flex; /* resim ve yazıyı yan yana koyar */
-    align-items: flex-start; /* yazıyı resmin üstüne hizalar */
-    gap: 10px; /* resim ile yazı arası boşluk */
-    margin-bottom: 40px; /* alt boşluk */
+  display: flex; /* resim ve yazıyı yan yana koyar */
+  align-items: flex-start; /* yazıyı resmin üstüne hizalar */
+  gap: 10px; /* resim ile yazı arası boşluk */
+  margin-bottom: 40px; /* alt boşluk */
 }
-
 .i4-section img {
-    width: 340px;
-    height: 260px;
-    display: block; /* altına yazı geçmesi için */
-    object-fit: cover;
-    border: 5px solid #D2AF8E;
+  width: 340px;
+  height: 260px;
+  display: block; /* altına yazı geçmesi için */
+  object-fit: cover;
+  border: 5px solid #d2af8e;
 }
 .i4-text {
-    margin-top: 10px; /* resim ile yazı arası boşluk */
+  margin-top: 10px; /* resim ile yazı arası boşluk */
+  font-size: 16px;
+  color: green;
+  line-height: 1.4;
+}
+
+/*i3 kısmı*/
+.i3-section {
+  display: flex; /* resimleri yan yana koyar */
+  gap: 10px; /* resimler arası boşluk */
+  margin-bottom: 40px; /* alt boşluk */
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.i3-section img {
+  width: 320px;
+  height: 260px;
+  object-fit: cover;
+  border: 5px solid #d2af8e;
+  box-sizing: content-box;
+}
+.i3-text {
+  margin-top: 10px; /* resim ile yazı arası boşluk */
+  font-size: 16px;
+  color: green;
+  line-height: 1.4;
+  max-width: 600px;
+}
+
+/*three section*/
+.three-section {
+    display: flex;           /* resimleri yan yana koyar */
+    justify-content: center; /* ortalar */
+    gap: 35px;               /* resimler arası boşluk */
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.three-item {
+    display: flex;
+    flex-direction: column;  /* resim üstte, yazı altta */
+    align-items: center;     /* ortalar */
+}
+
+.three-item img {
+    width: 310px;
+    height: 210px;
+    object-fit: cover;
+    border: 5px solid #D2AF8E; /* çerçeve rengi */
+    box-sizing: border-box;
+    display: block;
+}
+
+.three-item p {
+    margin-top: 10px;        /* resim ile yazı arası boşluk */
+    text-align: center;
     font-size: 16px;
-    color: green; 
+    color: green;
+    width: 310px;            /* resimle aynı genişlik */
+    height: 60px;           /* yazı yüksekliği */
     line-height: 1.4;
 }
