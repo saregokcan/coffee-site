@@ -47,7 +47,29 @@ image-banner::after {
   top: 0;
   left: 0;
   width: 100%;
-  height: 800%;
+  height: 50%;
   background-color: #D2AF8E; /*telegram rengi*/
  
+}
+
+/* i4 kısmı */
+.i4-section {
+    display: flex; /* resim ve yazıyı yan yana koyar */
+    align-items: flex-start; /* yazıyı resmin üstüne hizalar */
+    gap: 10px; /* resim ile yazı arası boşluk */
+    margin-bottom: 40px; /* alt boşluk */
+}
+
+.i4-section img {
+    width: 340px;
+    height: 260px;
+    display: block; /* altına yazı geçmesi için */
+    object-fit: cover;
+    border: 5px solid #D2AF8E;
+}
+.i4-text {
+    margin-top: 10px; /* resim ile yazı arası boşluk */
+    font-size: 16px;
+    color: green; 
+    line-height: 1.4;
 }
