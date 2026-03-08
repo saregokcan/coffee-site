@@ -12,10 +12,25 @@ body {
 }
 
 .container {
-  width: 1000px;
-  margin: auto;
+  width: 1000px;       /* sayfa genişliği */
+    height: 1800px;      /* sayfa yüksekliği */
+    margin: 0 auto;
+    position: relative; 
 }
 
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.logo-text {
+margin-top: 12px;       
+  font-size: 24px;       
+  font-weight: bold;      
+  color: #d2af8e;         
+  font-family: Arial, sans-serif;
+}
 .logo img {
   width: 150px;
   height: 150px;
