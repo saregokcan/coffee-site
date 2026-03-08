@@ -34,9 +34,15 @@ body {
   line-height: 50px;
   text-align: center;
   text-decoration: none;
-  color: red;
-  border: 1px solid purple;
+  color: #d2af8e;
+  border: none;
+  transition: 0.3s;
 }
+
+.menu a:hover {
+  color: white;
+}
+
 /*banne kısmı*/
 
 .image-banner {
@@ -82,7 +88,7 @@ image-banner::after {
 .i4-text {
   margin-top: 10px; /* resim ile yazı arası boşluk */
   font-size: 16px;
-  color: green;
+ color: #d2af8e;
   line-height: 1.4;
 }
 
@@ -104,7 +110,7 @@ image-banner::after {
 .i3-text {
   margin-top: 10px; /* resim ile yazı arası boşluk */
   font-size: 16px;
-  color: green;
+  color: #d2af8e;
   line-height: 1.4;
   max-width: 600px;
 }
@@ -137,7 +143,7 @@ image-banner::after {
     margin-top: 10px;        /* resim ile yazı arası boşluk */
     text-align: center;
     font-size: 16px;
-    color: green;
+    color: #d2af8e;
     width: 310px;            /* resimle aynı genişlik */
     height: 60px;           /* yazı yüksekliği */
     line-height: 1.4;
@@ -168,7 +174,7 @@ footer {
 }
 
 .footer-column h3 {
-    color: #fff;
+    color: #d2af8e;
     margin-bottom: 10px;
     font-size: 18px;
 }
@@ -184,7 +190,7 @@ footer {
 }
 
 .footer-column ul li a {
-    color: #fff;
+    color: #d2af8e;
     text-decoration: none;
     font-size: 14px;
 }
@@ -215,6 +221,14 @@ footer {
 }
 
 .social-item span {
-    color: #fff;
+    color: #d2af8e;
     font-size: 14px;
+}
+
+.social-icons .social-item:hover span {
+  color: white;
+}
+
+.social-icons .social-item:hover img {
+  filter: brightness(0) invert(1); /* ikon rengini beyaza çevirir */
 }
